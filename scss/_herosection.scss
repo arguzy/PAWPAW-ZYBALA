@@ -1,0 +1,50 @@
+.hero{
+    min-height: 90vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+       
+    &--index {
+        background: url('../media/idx/wall-idx.jpg');
+    }
+    &--contacto{
+    background-image: url('../media/cont/wall-hero-cnt.png');
+    }   
+    &--pelu {
+    background-image: url('../media/pelu/wall-hero-barber.jpg');
+    }
+    &--kinder{
+    background-image: url('../media/kinder/wall-hero-kinder.jpg');
+    }
+    &--productos {
+    background-image: url('../media/prdts/wall-hero-shop.jpg');
+    }
+    &--index,  
+    &--contacto,
+    &--pelu,
+    &--productos {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+ &__container{
+    margin-left: .5em;
+    display: block;
+    width: 60vw;
+    max-width: 320px;
+    }
+&__title,
+&__text{
+    font-size: 1em + 1.5vw;
+    color: whitesmoke;
+    text-shadow:indigo $size-font-shadow;   
+    }
+&__title{
+font-size: $size-font-titles;
+    }
+&__text{
+font-size: $size-font-subtitles;
+    }
+}

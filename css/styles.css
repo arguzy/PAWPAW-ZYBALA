@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@import url("http://fonts.googleapis.com/css?family=Quicksand:wght@387&family=Raleway:wght@233&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body main {
+  min-height: calc(100vh - ($size-height-header + $size-height-footer)); }
+
+.btn {
+  margin: 2.5vw;
+  width: 130px;
+  padding: 2.5vw 2.5vw;
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+  background-color: indigo;
+  color: whitesmoke;
+  text-align: center;
+  display: inline-block;
+  transition: 1s; }
+  .btn:hover {
+    background: goldenrod;
+    color: whitesmoke;
+    /*La regla tiene color, por la adaptación en contacto-faq.html*/
+    transition: 1s; }
+  .btn--index {
+    border: 2px solid whitesmoke;
+    margin-top: 30px;
+    background: none; }
+  .btn--index:hover {
+    background: purple; }
+  .btn--form {
+    margin: 0%;
+    width: 100%;
+    background: #e4b00575;
+    border-top-left-radius: none;
+    border-top-right-radius: none;
+    border-color: none;
+    font-family: 'quicksand';
+    font-size: 1em;
+    font-weight: bolder;
+    color: white; }

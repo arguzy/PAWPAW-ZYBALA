@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>PAWPAW</title>
+    </head>
+<body>
+    <header>  
+        <a class="logo" href="index.html">PAW-PAW <i class="fa fa-paw logo__i"></i></a>
+        <div class="menu">
+            <input id="nav" class="menu__input" type="checkbox" >
+            <label for="nav" class="menu__label"><i class="fa fa-bars menu__icon"></i></label>
+            <nav class="menu__nav">
+                    <ul class="menu__ul">
+                        <li class="menu__li"><a class="menu__a" href="index.html">Inicio</a></li>
+                        <li class="menu__li"><a  class="menu__a" href="contacto-faq.html">Contacto</a></li>
+                        <li class="menu__li"><a  class="menu__a" href="productos.html">Productos</a></li>
+                        <li class="menu__li"><a  class="menu__a" href="guarderia.html">Guardería</a></li>
+                        <li class="menu__li"><a  class="menu__a" href="peluqueria.html">Peluquería</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <main>
+        <section class="hero hero--kinder">  
+            <div class="hero__container">
+                <h1 class="hero__title">PAWPAW Guardería</h1>
+                <p class="hero__text">Dejanos a tu mascota cuando tenes que salir, nosotros la sabemos cuidar! </p>
+                <a class="btn hero__btn" href="#turno-kinder">Pedír Turno!</a>
+            </div>
+        </section>
+    
+        <section class="sect-useful">
+            
+            <div class="sect--container">
+                <div class="sect--order">
+                    <h3>Pedir turno al Whatsapp</h3>
+                    <p>Escribí un mensaje con estos datos, al (011) 5111-9999:</p>
+                    <ol>
+                        <li>Nombre y Apellido</li>
+                        <li>Teléfono para Emergencias</li>
+                        <li>Raza y Tamaño</li>
+                        <li>Días y Horarios en los que podes traer a tu mascota</li>
+                    </ol>
+                </div>
+                <img src="media/pedido-turno.jpg" alt="persona-y-teléfono">
+            </div>
+
+            <div class="sect--container">
+                <img src="media/kinder/art-knwo-adiestrador.jpg" alt="mujer-adiestrando-perro">
+                <div class="sect--staff">
+                <h3>¿Quién cuida los perros?</h3>
+                <p>Contratamos a adiestradores profionales, para que cuiden y vigilen todo el tiempo a tu mascota.</p>
+               </div>
+           </div>
+            
+           <div class="sect--container">
+                <div class="sect--map">
+                    <h3>¿Dónde se encuentra nuestra Guardería?</h3>
+                    <p>La podes encontrar en la calle José Cabrera 6057, del barrio de Palermo, en la Ciudad Autónoma de Buenos Aires.</p>
+                </div>
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.876468107857!2d-58.444918285177344!3d-34.58199216385506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5ecf0b5106d%3A0x6c332324b2b3c1cb!2sJos%C3%A9%20A.%20Cabrera%206057%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1626049913355!5m2!1ses-419!2sar"width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </iframe>
+            </div>
+
+            <section class="slider">
+                <div class="slider__text">
+                    <h3>Sólo experiencia positivas!</h3>
+                    <p>Queremos que los perros pasen y quieran volver siempre</p>
+                </div>
+                <div class="slider__pics">
+                    <div>
+                        <img class="slider__img" src="media/kinder/slidekinder/slider-pic1-kinder.jpg" alt="perros-en-guarderia">
+                    </div>
+                    
+                    <div>
+                        <img class="slider__img" src="media/kinder/slidekinder/slider-pic2-kinder.jpg" alt="perros-en-guarderia">
+                    </div>
+                    
+                    <div>
+                        <img class="slider__img" src="media/kinder/slidekinder/slider-pic3-kinder.jpg" alt="perros-en-guarderia">
+                    </div>
+                    
+                    <div>
+                        <img class="slider__img" src="media/kinder/slidekinder/slider-pic4-kinder.jpg" alt="perros-en-guarderia">
+                    </div>
+                    
+                    <div>
+                        <img class="slider__img" src="media/kinder/slidekinder/slider-pic5-kinder.jpg" alt="perros-en-guarderia">
+                    </div>
+                    
+                    <div>
+                        <img class="slider__img" src="media/kinder/slidekinder/slider-pic6-kinder.jpg" alt="perros-en-guarderia">
+                    </div>
+                    
+                    <div>
+                        <img class="slider__img" src="media/kinder/slidekinder/slider-pic7-kinder.jpg" alt="perros-en-guarderia">
+                    </div>
+                    
+                    <div>
+                        <img class="slider__img" src="media/kinder/slidekinder/slider-pic8-kinder.jpg" alt="perros-en-guarderia">
+                    </div>
+                </div>
+    
+            </section>
+            
+            <div class="formulario formulario--kinder">   
+                <h5 class="formulario__encabezado">Formulario de Reserva</h5>
+                <form class="formulario__contenido" id="#turno-kinder">
+                    <div class="formulario__perfiles">
+                        <div>
+                            <label for="fullname-kinder">Nombre/s y Apellido/s</label>
+                            <input type="text" id="fullname-kinder" name="fullname-kinder" pattern="[A-Za-z]{03-15}" autocomplete="on" required>
+                        </div>
+        
+                        <div>
+                            <label for="phone-kinder">Nro. de Teléfono</label>
+                            <input type="tel" id="phone-kinder" name="phone-kinder" placeholder="9-0011-51119999" minlength="13" pattern="[0-9]{1}-[0-9]{4}-[0-9]{8}" autocomplete="on" required>
+                        </div>
+        
+                        <div>
+                            <label for="email-kinder">Casilla de Correo</label>
+                            <input type="email" id="email-kinder" name="email-kinder" placeholder="casilla@correo.com" autocomplete="off" required>
+                        </div>
+        
+                        <div>
+                            <label for="name-pet-kinder">Nombre del Perro</label>
+                            <input type="text" id="name-pet-kinder" name="name-pet-kinder" pattern="[A-Za-z]{03-15}" required>
+                        </div>
+                    </div>
+        
+                    <div class="formulario__adicionales">
+                        <p class="formulario__subtitulo">Servicios Adicionales</p>
+                     
+                        <label for="bath"><input type="checkbox" id="bath" name="bath" value="bath">Baño</label>
+                
+                
+                        <label for="cut-hair"> <input type="checkbox" id="cut-hair" name="cut-hair" value="cut-hair">Corte de  Pelo</label>
+              
+            
+                        <label for="cut-nails"><input type="checkbox" id="cut-nails" name="cut-nails" value="cut-nails">Corte de Uñas</label>
+        
+                        <label for="clean-ear"> <input type="checkbox" id="clean-ear" name="clean-ear" value="clean-ear">Limpieza de Oídos</label>
+        
+                        <label for="clean-gland"><input type="checkbox" id="clean-gland" name="clean-gland" value="clean-gland">Limpieza de Glándulas</label>    
+                    </div>
+
+                    <p class="formulario__subtitulo">Días para la Reserva</p>
+                    
+                    <div class="formulario__selectivo">
+                        <label for="day-stay">¿Qué día lo cuidamos?</label>
+                        <select id="day-stay" name="day-stay">
+                            <option value="semana-completa">Lunes a Domingo</option>
+                            <option value="lunes-viernes">Lunes a Viernes</option>
+                            <option value="fines-de-semana">Sábados y Domingos</option>
+                            <option value="otros-dias">Otros días</option>
+                        </select>
+                    </div>
+                    
+                    <div class="formulario__textos" data-category="otros-dias">
+                        <label for="paticular-stay">Especificar</label>
+                        <textarea id="paticular-stay" name="paticular-stay" cols="35" rows="1"  style="resize:none"></textarea>
+                    </div>
+                    
+                    <div class="formulario__turno">
+                    <p class="formulario__subtitulo">Tiempo de la estadía</p>
+                    
+                    <label for="turn-morning"><input type="radio" id="turn-morning" name="visit-hour" value="morning">24 horas</label>
+        
+                        <label for="turn-noon"><input type="radio" id="turn-noon" name="visit-hour" value="noon">12 horas</label>
+        
+                        <label for="turn-afternoon"><input type="radio" id="turn-afternoon" name="visit-hour" value="afternoon">6 horas</label>
+                    </div>
+
+                    <div class="formulario__textos">
+                        <label for="commentary-kinder">Si tienes un comentario importante sobre tú mascota, dejalo aquí.</label>
+                        <textarea id="commentary-kinder" name="commentary-about-pet" cols="35" rows="3"  style="resize:none"></textarea>
+                    </div>
+
+                    <button class="btn btn--formulario" type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+        
+
+    </main>
+    
+
+    <footer>
+        <div class="sitemap">
+            <h5 class="sitemap__title">Mapa del Sitio</h5>
+            <ul class="sitemap__ul">
+                <li class="sitemap__li"><a class="sitemap__links" href="index.html">Inicio</a></li>
+                <li class="sitemap__li"><a class="sitemap__links" href="contacto-faq.html">Contacto</a></li>
+                <li class="sitemap__li"><a class="sitemap__links" href="productos.html">Productos</a></li>
+                <li class="sitemap__li"><a class="sitemap__links" href="guarderia.html">Guardería</a></li>
+                <li class="sitemap__li"> <a class="sitemap__links" href="peluqueria.html">Peluquería</a></li>
+            </ul>
+        </div>
+
+        <form class="newsletter" action="">
+            <label class="newsletter__label" for="email-news"><h5>Newsletter</h5></label>
+            <input class="newsletter__input" type="email" id="email-news" name="email-news" placeholder="email@me-susbribí.com" required>
+            <div>
+                <button class="newsletter__btn" type="submit">Suscribirme</button>
+            </div>
+        </form>
+
+        <div class="social">
+            <ul class="social__ul">
+                <li class="social__li"><a class="social__icon" href="#" aria-describedby="boton-facebook"><i class="fa fa-facebook-square"></i></a>
+                </li>
+                <li class="social__li"><a  class="social__icon" href="#" aria-describedby="boton-twitter"><i class="fa fa-twitter-square"></i></a>
+                </li>
+                <li class="social__li"><a  class="social__icon" href="#" aria-describedby="boton-instagram"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+
+        <address class="address">
+            <h5 class="address__title">Contáctate</h5>
+            <ul class="address__ul">
+                <li class="address__li"><p class="address__par">Whatsapp:</p><h6 class="address__subtitle">011-9-51119999</h6>
+                </li>
+                <li class="address__li"><p class="address__par">Teléfono Local:</p><h6 class="address__subtitle">011-9-4700-0001</h6>
+                </li>
+                <li class="address__li"><p class="address__par">E-mail:</p><h6 class="address__subtitle">pawpaw@veterinaria.com</h6>
+                </li>
+            </ul>
+        </address>
+        
+        <div class="copyright">
+            <p class="copyright__text">Copyright PAWPAW S.A. - 2021. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+.market{
+    margin-top: 200px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    border-color: black;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../media/idx/bann-mkt.jpg);
+    @extend .hero--index;
+
+    &__container{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3.5em;
+    height: 300px;
+    }
+
+
+    &__text{
+    display: flex;
+    flex-flow: column;
+    align-items: center; 
+    
+}
+    &__text{
+    @include title( white, normal, bolder);
+}
+
+}
+

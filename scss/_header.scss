@@ -1,0 +1,80 @@
+header {
+    min-height:  4em + 1vw;
+    width: 100%;
+    background: gray;
+    align-items: center;
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+
+
+.menu{
+    &__input{
+    display: none;
+    }
+    &__label{
+    display: block;
+    padding: .2em;
+    font-size: 1em + 1.5vw;
+    color: whitesmoke;
+    padding-left: 15px;
+    padding-right: 15px;
+    @include breakpoint (notebook){
+        display: none;
+    }
+}
+&__nav{
+    margin-left: -15em;
+    transition: 1s;
+    @include breakpoint (notebook){
+        margin-left: 0em;
+    }
+}
+&__ul{
+    z-index: 9;
+    position: absolute;
+    flex-flow: column;
+    background: gray;
+    text-align: center;
+    @include breakpoint (notebook){
+        position: relative;
+        display: flex;
+        flex-flow: row;
+        text-align: center;
+    }
+    }
+    &__a{
+    display: block;
+    padding: 1em 2em;
+    font-weight: bolder;
+    color: gray;
+    }
+    &__a:hover{ 
+    @include breakpoint (notebook){
+        color: goldenrod;
+    }
+    }
+    &__input:checked ~ &__nav{
+    margin-left: 0em;
+    transition: 1s;
+    }
+    &__li:hover{
+    @include breakpoint (notebook){
+            background-color: goldenrod;
+    }
+    }   
+}
+.logo{
+    font-size: 1em + 1.5vw;
+    color: whitesmoke;
+    left:0%;
+
+
+    &__i{
+    font-size: 1em + 1.5vw;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: goldenrod;
+    }
+    }
+}

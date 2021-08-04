@@ -1,0 +1,172 @@
+@import '_size';
+@import '_colours';
+@import '_breakpoints';
+
+footer{
+    margin-top: 100px;
+    height:$size-height-footer;
+    padding-top: 2em;
+    background-color: gray;
+        display: grid;
+        grid-auto-columns: 1fr;
+
+        align-items: center;
+    @include breakpoint (tablet){
+            display: grid;
+            grid-template-columns: [x0] 2fr [x1] 1fr [x2] 2fr [x3];
+            grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
+            align-items: flex-start;  
+    }
+}
+
+.sitemap{
+    text-align: center;
+    color: indigo;
+    @include breakpoint (tablet){
+        grid-column: x0 / x1 ;
+        grid-row: y0 / y2;
+    }
+    
+    &__title{
+
+    text-align: center;
+    font-size: $size-font-titles;
+
+    }
+    &__li{
+        padding: .3em;
+        :hover{
+            color: goldenrod;
+    }
+    }
+
+
+    &__links{
+    font-size: 1em + 1.5vw;
+    color: indigo;
+    padding: .1em;
+    }
+    }
+
+.address{
+    min-height: 30em + 2vw;
+    font-style: normal;
+    text-align: center;    
+    color: indigo;
+    @include breakpoint (tablet){
+        margin-top: 1.5em;
+        height:fit-content;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+            grid-column: x2 / x3;
+            grid-row: y1 / y2; 
+    }
+
+    &__ul{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    }   
+    &__li{
+    margin: 1em;
+    }
+    &__title{
+    font-size: $size-font-titles;
+    }
+
+    &__subtitle{
+    font-size: $size-font-subtitles;
+    width: fit-content;
+    border-bottom: .1em solid deeppink;
+    }
+}
+
+.newsletter{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    @include breakpoint (tablet){
+        grid-column: x2 / x3;
+        grid-row: y0 / y1;
+    }
+    
+    &__label{
+    font-family: 'quicksand',sans-serif;
+    font-size: 1em + 1.5vw ;
+    font-weight: bolder;
+    color: whitesmoke;
+    }
+
+    &__input{
+    border-top: 2px solid goldenrod;
+    border-left: 2px solid goldenrod;
+    border-right: 2px solid goldenrod;
+    min-width: 30vw;
+    max-width: 40vw;
+    text-align: center;
+    color: indigo;
+    font-family: 'raleway', sans-serif;
+    @include breakpoint (tablet){
+        width: 20vw;
+        
+    }
+    }
+
+    &__btn{
+    border-bottom: 2px solid goldenrod;
+    border-left: 2px solid goldenrod;
+    border-right: 2px solid goldenrod;
+    min-width: 30vw;
+    max-width: 30vw;
+    background-color: indigo;
+    color: whitesmoke;
+    font-family: 'raleway', sans-serif;
+    @include breakpoint (tablet){
+        :hover{
+        background-color: goldenrod;
+    }
+    }
+    }
+}
+
+.social{
+    font-size: 1em + 1.5vw;
+    @include breakpoint (tablet){
+        grid-column: x1 / x2;
+        grid-row: y0 / y2;
+        }
+
+    &__ul {
+        display: flex;
+        justify-content: center;
+        @include breakpoint (tablet){
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+        }
+    
+    &__icon{
+    padding: .3em;
+    color: indigo;
+    @include breakpoint (tablet){
+        :hover{
+        color: goldenrod;
+        }
+        }
+        }
+    }
+
+.copyright{
+    text-align: center;
+    color: whitesmoke;
+    @include breakpoint (tablet){
+        grid-column: x0/x3;
+        padding-top: 1em;
+    }
+    
+    &__text{
+    font-size: $size-font-par;
+}
+}

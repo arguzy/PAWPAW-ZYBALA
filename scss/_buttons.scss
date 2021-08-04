@@ -1,0 +1,45 @@
+@import '_size';
+@import '_colours';
+@import '_breakpoints';
+
+.btn {
+    margin: $size-btn-margin;
+    width: 130px;
+    padding: $size-btn-padding;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    background-color: indigo;
+    color: whitesmoke;
+    text-align: center;
+    display: inline-block;
+    transition: 1s;
+
+    &:hover{
+    background: goldenrod;
+    color: whitesmoke;
+    /*La regla tiene color, por la adaptación en contacto-faq.html*/
+    transition: 1s;
+    }
+    &--index{
+        border: 2px solid whitesmoke;
+        margin-top: 30px;
+        background: none;
+    
+    }
+    &--index:hover{
+        background: purple;
+    }   
+
+    &--form{
+        margin: 0%;
+        width: 100%;
+        background:#e4b00575;
+        border-top-left-radius: none;
+        border-top-right-radius: none;
+        border-color: none;
+        font-family: 'quicksand';
+        font-size: 1em;
+        font-weight: bolder;
+        color: rgb(255, 255, 255);
+    }
+}

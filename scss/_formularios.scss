@@ -1,0 +1,135 @@
+  .formulario{
+    width: 100vw;
+    min-height: 100vh;
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &__contenido{
+      min-width: 80vw;
+      max-width: 90vw;
+      min-height: 95vh;
+      margin-bottom: 20px;
+      background-image: linear-gradient(0deg, rgba(80, 60, 0, 0.748) 0%, rgba(0,0,0,0.6082808123249299) 100%);
+      box-shadow: -.3em .3em 1em 1em rgba(0, 0, 0, 0.652) ;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+    }
+
+    &__nombre{
+      min-width: 90vw;
+      display: flex;
+      flex-flow: column;
+      justify-content:space-between;
+    }
+
+    &__telefono,
+    &__correo,
+    &__mascota
+    {
+      @extend .formulario__nombre
+    }
+    
+    &__dias,
+    &__adicionales, 
+    &__turno{
+      display: flex;
+      flex-flow: column;
+    }
+    
+    &__selectivo {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+    }
+
+
+    &__nombre,
+    &__perfiles,
+    &__adicionales,
+    &__selectivo,
+    &__turno{
+      padding: 1em;
+    }
+
+    &__dias{
+      margin-bottom: 35px;
+    }
+
+    &__opciones{
+      min-width: 60vw;
+      max-width: 75vw;
+      border-radius: 10px;
+      background-color: rgba(151, 122, 25, 0.802);
+      color:black;
+      font-size: calc(.7em + 1vw);
+      font-family: 'quicksand';
+      font-weight: bolder;
+    }
+
+    &__label{
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 5px;
+      font-size: calc(.8em + 1vw);
+      
+    }
+    &__input{
+      max-width: 80%;
+      margin-right: 5%;
+      margin-left: 5%;
+      text-align: center;
+      border: none;
+      border-radius: 5px;
+      font-size: calc(.8em + 1vw);
+    }
+
+    &__input::placeholder{
+      background-color: rgba(151, 122, 25, 0.802);
+      color: rgb(0, 0, 0);
+      font-family: 'quicksand';
+      font-weight: bolder;
+    }
+    
+    &__par{
+      padding-bottom: 5px;
+      padding-left: 5px;
+      padding-left: 3px;
+      font-family: 'quicksand';
+      font-size: calc(.5em + 1vw);
+      color: white;
+      font-weight: bolder;
+      display: inline;
+    }
+    &__subtitulo{
+      @extend .formulario__par;
+      text-align: center;
+      padding-bottom: 15px;
+      padding-left: 10px;
+      font-size: calc(.8em + 1vw);
+    }
+    
+    &__encabezado{
+      z-index: 1;
+      margin-top: 20px;
+      width: 90vw;
+      background-color: rgba(218, 165, 32, 0.802);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      font-size: calc(1.4em + 1vw);
+      text-align: center;
+    }
+    
+
+
+    
+
+}
