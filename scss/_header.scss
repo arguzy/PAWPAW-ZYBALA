@@ -1,80 +1,100 @@
 header {
-    min-height:  4em + 1vw;
-    width: 100%;
-    background: gray;
-    align-items: center;
-    display: flex;
-    flex-flow: row-reverse;
-    justify-content: space-between;
-
-
-.menu{
-    &__input{
-    display: none;
-    }
-    &__label{
-    display: block;
-    padding: .2em;
-    font-size: 1em + 1.5vw;
-    color: whitesmoke;
-    padding-left: 15px;
-    padding-right: 15px;
-    @include breakpoint (notebook){
-        display: none;
-    }
-}
-&__nav{
-    margin-left: -15em;
-    transition: 1s;
-    @include breakpoint (notebook){
-        margin-left: 0em;
-    }
-}
-&__ul{
-    z-index: 9;
-    position: absolute;
-    flex-flow: column;
-    background: gray;
-    text-align: center;
-    @include breakpoint (notebook){
-        position: relative;
-        display: flex;
-        flex-flow: row;
-        text-align: center;
-    }
-    }
-    &__a{
-    display: block;
-    padding: 1em 2em;
-    font-weight: bolder;
-    color: gray;
-    }
-    &__a:hover{ 
-    @include breakpoint (notebook){
-        color: goldenrod;
-    }
-    }
-    &__input:checked ~ &__nav{
-    margin-left: 0em;
-    transition: 1s;
-    }
-    &__li:hover{
-    @include breakpoint (notebook){
-            background-color: goldenrod;
-    }
-    }   
-}
-.logo{
-    font-size: 1em + 1.5vw;
-    color: whitesmoke;
-    left:0%;
-
-
-    &__i{
-    font-size: 1em + 1.5vw;
-    padding-left: 15px;
-    padding-right: 15px;
-    color: goldenrod;
-    }
-    }
-}
+   height: 50px;
+   width: 100%;
+   display: flex;
+   flex-flow: row;
+   justify-content: space-between;
+   align-items: center;
+   background: $clr-segments;
+   @include breakpoint (tablet){
+   height: 75px;
+   flex-flow: row-reverse;
+   }
+} 
+   .menu{
+       margin-top: 25em;
+       text-align: center;
+       display: flex;
+       flex-flow: column;
+       @include breakpoint (tablet){
+           margin-top: 0em;
+           display: flex;
+           flex-flow: row;
+           width: 75%;
+        }
+        &__input{
+            display: none;
+        }
+        &__label{
+            font-size: 2em;
+            color: $clr-text;
+            @include breakpoint (tablet){
+                display: none
+            }
+        }
+        &__nav{
+            visibility: hidden;
+            opacity: 0;
+            transition:ease-in-out 1s; 
+            @include breakpoint (tablet){
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+        &__input:checked ~ &__nav{
+             visibility:visible;
+             opacity: 1;
+             z-index: 9;
+         }
+        &__ul{
+            list-style: none;
+            text-align: center;
+            background-color: $clr-segments;
+            margin-top: .2em;
+            @include breakpoint (tablet){
+                margin-top: 0em;
+            }
+   
+        }
+        &__li{
+            padding: 1.5em;
+            background: $clr-hovers;
+            @include breakpoint (tablet){
+                background-color:initial;
+                display: inline;
+                padding-left: 1em;
+            &:hover{
+                background: $clr-hovers;
+                transition: 1s ease-in-out;
+                border-radius: 100px 10px 100px 10px;    
+                } 
+            }
+        }
+        &__a{
+            text-decoration: none;
+            font-size: 1.5em;
+            font-family: 'Quicksand',  sans-serif;
+            @include breakpoint (tablet){
+                font-size: 1em;
+                color: $clr-text;
+            }
+            }
+}  
+    .logo{
+        padding-left: 1em;
+        text-decoration: none;
+        font-family: 'Quicksand',  sans-serif;
+        font-size: 1.25em;
+        color: $clr-text;
+        @include breakpoint (tablet){
+            padding-right: 1em;
+            font-size: 1em;
+        }
+        &__i{
+            font-size: 1em;
+            color: $clr-iconic;
+        }
+        @include breakpoint (tablet){
+            font-size: 1.5em;
+        }
+        }

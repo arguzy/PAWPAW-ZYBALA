@@ -1,436 +1,508 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/styles.css">
-        <title>PAWPAW</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Ropa, Correas, Pretales, Tazones, Juguetes y Alimentos Balanceados para tu perro. Marcas nacionales e importadas, consultar ofertas y fechas de on-sale!">
+    <meta name="keywords"
+        content="petshop canina, petshop perros, petshop perro capital federal, petshop perro capital federal, petshop perro caba, petshop perro villa urquiza, petshop, accesorios perro, ropa perro, pretales perro, correas perro, tazón perro, bowl perro, alimento balanceado perro, juguete perro, juguetes perro">
+    <meta name="author" content="Ariel Zybala">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>PAWPAW PetShop</title>
+</head>
+
 <body>
-    <header>  
+    <header>
         <a class="logo" href="index.html">PAW-PAW <i class="fa fa-paw logo__i"></i></a>
         <div class="menu">
-            <input id="nav" class="menu__input" type="checkbox" >
+            <input id="nav" class="menu__input" type="checkbox">
             <label for="nav" class="menu__label"><i class="fa fa-bars menu__icon"></i></label>
             <nav class="menu__nav">
-                    <ul class="menu__ul">
-                        <li class="menu__li"><a class="menu__a" href="index.html">Inicio</a></li>
-                        <li class="menu__li"><a  class="menu__a" href="contacto-faq.html">Contacto</a></li>
-                        <li class="menu__li"><a  class="menu__a" href="productos.html">Productos</a></li>
-                        <li class="menu__li"><a  class="menu__a" href="guarderia.html">Guardería</a></li>
-                        <li class="menu__li"><a  class="menu__a" href="peluqueria.html">Peluquería</a></li>
-                    </ul>
+                <ul class="menu__ul">
+                    <li class="menu__li"><a class="menu__a" href="index.html">Inicio</a></li>
+                    <li class="menu__li"><a class="menu__a" href="contacto-faq.html">Contacto</a></li>
+                    <li class="menu__li"><a class="menu__a" href="productos.html">Productos</a></li>
+                    <li class="menu__li"><a class="menu__a" href="guarderia.html">Guardería</a></li>
+                    <li class="menu__li"><a class="menu__a" href="peluqueria.html">Peluquería</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
 
-    <main>   
-        <section class="hero hero--productos">
+    <main>
+        <section class="hero hero--products">
             <div class="hero__container">
-                <h1 class="hero__title">PAWPAW Market</h1>
-                <p class="hero__text">Mira las promociones más importantes de nuestra tienda.</p>
-                <a href="#ofertas" class="btn hero__btn ">Ver ofertas!</a>
+                <h1 class="hero__title">PAWPAW Petshop, Accesorios y Más</h1>
+                <p class="hero__text">Alimentos Balancedos y Accesorios de todo tipo. Mira todas las ofertas!</p>
+                <a href="#ofertas" class="btn btn--hero">Ver ofertas!</a>
             </div>
             <div>
-                <a href="https://api.whatsapp.com/send?phone=541151118888&text=Completa%20estos%20datos%2C%20para%20solicitar%20productos%3A%0A%F0%9F%90%BENombre%20y%20apellido%3B%0A%F0%9F%8F%9A%EF%B8%8FDirecci%C3%B3n%3B%0A%F0%9F%86%94C%C3%B3digo%20de%20Producto%3B%0A%23%EF%B8%8F%E2%83%A3Cantidad%20por%20Producto%3B%0A%E2%8C%9AD%C3%ADa%20y%20Horario%20en%20que%20podes%20Recibir%20la%20Entrega%3B" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+                <a class="hero__whapp"
+                    href="https://api.whatsapp.com/send?phone=541151118888&text=Completa%20estos%20datos%2C%20para%20solicitar%20productos%3A%0A%F0%9F%90%BENombre%20y%20apellido%3B%0A%F0%9F%8F%9A%EF%B8%8FDirecci%C3%B3n%3B%0A%F0%9F%86%94C%C3%B3digo%20de%20Producto%3B%0A%23%EF%B8%8F%E2%83%A3Cantidad%20por%20Producto%3B%0A%E2%8C%9AD%C3%ADa%20y%20Horario%20en%20que%20podes%20Recibir%20la%20Entrega%3B"
+                    target="_blank"><i class="fa fa-phone"></i></a>
             </div>
         </section>
 
-        <section class="sect-useful"> 
-            <div class="sect--container">
-                <div class="sect--order">
-                    <h3>Pedidos al Whatsapp</h3>
-                    <p>Escribí un mensaje con estos datos, al (011)5111-9999:</p>
-                    <ol>
-                        <li>Nombre y apellido</li>
-                        <li>Dirección</li>
-                        <li>Código de Producto</li>
-                        <li>Cantidad del Producto</li>
-                    </ol>
-                    </div>
-                    <img src="media/pedido-turno.jpg" alt="persona-y-telefono">
-                </div>
+        <section class="quarter">
 
-    </section>
-    
+            <div class="quarter__charge">
+                <div class="quarter__structure">
+                    <div class="quarter__message">
+                        <div class="text">
+                            <h3 class="quarter__caption">Pedidos al Whatsapp</h3>
+                            <p class="quarter__tale">Escribí un mensaje con estos datos, al (011)5111-9999:</p>
+                        </div>
+                    </div>
+                    <div class="quarter__list">
+                        <ol class="quarter__ol">
+                            <li class="quarter__steps">Nombre y apellido</li>
+                            <li class="quarter__steps">Dirección</li>
+                            <li class="quarter__steps">Código de Producto</li>
+                            <li class="quarter__steps">Cantidad del Producto</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
 
+            <section class="quarter__stock" id="ofertas">
+                <div class="quarter__filter">
+                    <input class="quarter__funnel" type="radio" id="all" name="categories" value="all" checked>
+                    <input class="quarter__funnel" type="radio" id="pots" name="categories" value="pots">
+                    <input class="quarter__funnel" type="radio" id="food" name="categories" value="food">
+                    <input class="quarter__funnel" type="radio" id="clothe" name="categories" value="clothe">
+                    <input class="quarter__funnel" type="radio" id="belt" name="categories" value="belt">
+                    <input class="quarter__funnel" type="radio" id="pretals" name="categories" value="pretals">
+                    <input class="quarter__funnel" type="radio" id="toys" name="categories" value="toys">
 
+                    <div class="quarter__widget">
+                        <div class="quarter__board">
+                            <input class="quarter__input" type="checkbox" name="knob" id="filtering">
+                            <label class="quarter__knob" for="filtering"><i class="fa fa-filter"></i>Filtros</label>
+                            <div class="quarter__expanded"></div>
+                            <ul class="quarter__inventory">
+                                <li class="quarter__segment quarter__segment--all">
+                                    <label class="quarter__lines" for="all">Todos</label>
+                                </li>
+                                <li class="quarter__segment quarter__segment--pots">
+                                    <label class="quarter__lines" for="pots">Tazones</label>
+                                </li>
+                                <li class="quarter__segment quarter__segment--food">
+                                    <label class="quarter__lines" for="food">Alimento</label>
+                                </li>
+                                <li class="quarter__segment quarter__segment--clothe">
+                                    <label class="quarter__lines" for="clothe">Ropa</label>
+                                </li>
+                                <li class="quarter__segment quarter__segment--belt">
+                                    <label class="quarter__lines" for="belt">Correas</label>
+                                </li>
+                                <li class="quarter__segment quarter__segment--pretals">
+                                    <label class="quarter__lines" for="pretals">Pretales</label>
+                                </li>
+                                <li class="quarter__segment quarter__segment--toys">
+                                    <label class="quarter__lines" for="toys">Juguetes</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-    <div class="sect-ofertas">
-        <div class="sect--filtro">
-            <input type="radio" id="todo" name="categories" value="todo" checked>
-            <input type="radio" id="tazones" name="categories" value="tazones">
-            <input type="radio" id="alimentos" name="categories" value="alimentos">
-            <input type="radio" id="ropa" name="categories" value="ropa">
-            <input type="radio" id="correas" name="categories" value="correas">
-            <input type="radio" id="pretales" name="categories" value="pretales">
-            <input type="radio" id="juguetes" name="categories" value="juguetes">
-            
+                    <div class="quarter__catalog">
+                        <div class="quarter__prod" data-category="pots">
+                            <img src="media/prdts/bowl/item-carrito-bowl1.jpg"
+                                onmouseover="this.src='media/prdts/bowl/item-carrito-bowl2.jpg';"
+                                onmouseout="this.src='media/prdts/bowl/item-carrito-bowl1.jpg';" alt="tazón-de-comida"
+                                class="quarter__pic">
+                            <div class="quarter__brand">
+                                <h3 class="quarter__item">ZeeDog Bowl Steal</h3>
+                                <p class="quarter__code">Código: zdb1</p>
+                            </div>
+                            <div class="quarter__price">
+                                <p class="quarter__amount">PRECIO $700</p>
+                            </div>
+                        </div>
 
+                        <div class="quarter__prod" data-category="pots">
+                            <img src="media/prdts/bowl/item-carrito-bowl3.jpg"
+                                onmouseover="this.src='media/prdts/bowl/item-carrito-bowl4.jpg';"
+                                onmouseout="this.src='media/prdts/bowl/item-carrito-bowl3.jpg';" alt="tazón-de-comida"
+                                class="quarter__pic">
+                            <div class="quarter__brand">
+                                <h3 class="quarter__item">ZeeDog Bowl Standart</h3>
+                                <p class="quarter__code">Código:zdb2</p>
+                            </div>
+                            <div class="quarter__price">
+                                <p class="quarter__amount">PRECIO $600</p>
+                            </div>
+                        </div>
 
-            <details>
-                <summary></summary>
-                <ul>
-                    <li>
-                        <label for="todo">Todos</label>
-                    </li>
-                    <li>
-                        <label for="tazones">Tazones</label>
-                    </li>
-                    <li>
-                        <label for="alimentos">Alimentos Balanceados</label>
-                    </li>
-                    <li>
-                        <label for="ropa">Ropa</label>
-                    </li>
-                    <li>
-                        <label for="correas">Correas</label>
-                    </li>
-                    <li>
-                        <label for="pretales">Pretales</label>
-                    </li>
-                    <li>
-                        <label for="juguetes">Juguetes</label>
-                    </li>
-                </ul>
-            </details>
+                        <div class="quarter__prod" data-category="pots">
+                            <img src="media/prdts/bowl/item-carrito-bowl5.jpg"
+                                onmouseover="this.src='media/prdts/bowl/item-carrito-bowl6.jpg';"
+                                onmouseout="this.src='media/prdts/bowl/item-carrito-bowl5.jpg';" alt="tazón-de-comida"
+                                class="quarter__pic">
+                            <div class="quarter__brand">
+                                <h3 class="quarter__item">ZeeDog Bowl Pro</h3>
+                                <p class="quarter__code">Código:zdb3</p>
+                            </div>
+                            <div class="quarter__price">
+                                <p class="quarter__amount">PRECIO $3000</p>
+                            </div>
+                        </div>
 
-            <section class="sect--stock">
-                <div class="sect--producto" data-category="tazones">
-                    <img src="media/prdts/bowl/item-carrito-bowl1.jpg"
-                        onmouseover="this.src='media/prdts/bowl/item-carrito-bowl2.jpg';"
-                        onmouseout="this.src='media/prdts/bowl/item-carrito-bowl1.jpg';" alt="tazón-de-comida"
-                        class="sect--pic">
-                    <div class="sect--text">
-                        <h3>ZeeDog Bowl Steal</h3>
-                        <p>Código: zdb1</p>
-                        <p>PRECIO $700</p>
+                        <div class="quarter__prod" data-category="pots">
+                            <img src="media/prdts/bowl/item-carrito-bowl7.jpg"
+                                onmouseover="this.src='media/prdts/bowl/item-carrito-bowl8.jpg';"
+                                onmouseout="this.src='media/prdts/bowl/item-carrito-bowl7.jpg';" alt="tazón-de-comida"
+                                class="quarter__pic">
+                            <div class="quarter__brand">
+                                <h3 class="quarter__item">ZeeDog Bowl Expand</h3>
+                                <p class="quarter__code">Código:zdb4</p>
+                            </div>
+                            <div class="quarter__price">
+                                <p class="quarter__amount">PRECIO $500</p>
+                            </div>
+                        </div>
+
+                        <div class="quarter__prod" data-category="food">
+                            <img src="media/prdts/alimento/item-carrito-alimento2.png"
+                                alt="alimento-balanceado-eukanuba" class="quarter__pic">
+                            <div class="quarter__brand">
+                                <h3 class="quarter__item">Eukanuba Small -12meses</h3>
+                                <p class="quarter__code">Código:es12</p>
+                            </div>
+                            <div class="quarter__price">
+                                <p class="quarter__amount">PRECIO $300 X/kg</p>
+                            </div>
+                        </div>
+
+                        <div class="quarter__prod" data-category="food">
+                            <img src="media/prdts/alimento/item-carrito-alimento1.png"
+                                alt="alimento-balanceado-eukanuba" class="quarter__pic">
+                            <div class="quarter__brand">
+                                <h3 class="quarter__item">Eukanuba Small +1año</h3>
+                                <p class="quarter__code">Código:es1</p>
+                            </div>
+                            <div class="quarter__price">
+                                <p class="quarter__amount">PRECIO $300 X/kg</p>
+                            </div>
+                        </div>
+
+                        <div class="quarter__prod" data-category="food">
+                            <img src="media/prdts/alimento/item-carrito-alimento3.png"
+                                alt="alimento-balanceado-eukanuba" class="quarter__pic">
+                            <div class="quarter__brand">
+                                <h3 class="quarter__item">Eukanuba Medium -12meses</h3>
+                                <p class="quarter__code">Código:em12</p>
+                            </div>
+                            <div class="quarter__price">
+                                <p class="quarter__amount">PRECIO $350 x/kg</p>
+                            </div>
+                        </div>
+
+                        <div class="quarter__prod" data-category="food">
+                            <img src="media/prdts/alimento/item-carrito-alimento4.png"
+                                alt="alimento-balanceado-eukanuba" class="quarter__pic">
+                            <div class="quarter__brand">
+                                <h3 class="quarter__item">Eukanuba Medium +1año</h3>
+                                <p class="quarter__code">Código:em1</p>
+                            </div>
+                            <div class="quarter__price">
+                                <p class="quarter__amount">PRECIO $350 x/kg</p>
+                            </div>
+                        </div>
+
+                        <div class="quarter__prod" data-category="clothe">
+                            <img src="media/prdts/ropa/item-carrito-ropa1.jpg"
+                                onmouseover="this.src='media/prdts/ropa/item-carrito-ropa2.jpg';"
+                                onmouseout="this.src='media/prdts/ropa/item-carrito-ropa1.jpg';" class="quarter__pic"
+                                alt="ropa-para-perros">
+                            <div class="quarter__brand">
+                                <h3 class="quarter__item">ZeeDog Buzo Pink</h3>
+                                <p class="quarter__code">Código:zdbp</p>
+                            </div>
+                            <div class="quarter__price">
+                                <p class="quarter__amount">PRECIO $800</p>
+
+                            </div>
+                        </div>
+
+                        <div class="quarter__prod" data-category="clothe">
+                            <img src="media/prdts/ropa/item-carrito-ropa3.jpg"
+                                onmouseover="this.src='media/prdts/ropa/item-carrito-ropa4.jpg';"
+                                onmouseout="this.src='media/prdts/ropa/item-carrito-ropa3.jpg';" class="quarter__pic"
+                                alt="ropa-para-perros">
+                            <div class="quarter__brand">
+                                <h3 class="quarter__item">ZeeDog Buzo Blue</h3>
+                                <p class="quarter__code">Código:zdbb</p>
+                            </div>
+                            <div class="quarter__price">
+                                <p class="quarter__amount">PRECIO $800</p>
+                            </div>
+                        </div>
+
+                        <div class="quarter__prod" data-category="clothe">
+                            <img src="media/prdts/ropa/item-carrito-ropa5.jpg"
+                                onmouseover="this.src='media/prdts/ropa/item-carrito-ropa6.jpg';"
+                                onmouseout="this.src='media/prdts/ropa/item-carrito-ropa5.jpg';" class="quarter__pic"
+                                alt="ropa-para-perros">
+                            <div class="quarter__brand">
+                                <h3 class="quarter__item">ZeeDog Water-Proof</h3>
+                                <p class="quarter__code">Código:zdi</p>
+                            </div>
+                            <div class="quarter__price">
+                                <p class="quarter__amount">PRECIO $1500</p>
+                            </div>
+                        </div>
+
+                        <div class="quarter__prod" data-category="clothe">
+                            <img src="media/prdts/ropa/item-carrito-ropa7.jpg"
+                                onmouseover="this.src='media/prdts/ropa/item-carrito-ropa8.jpg';"
+                                onmouseout="this.src='media/prdts/ropa/item-carrito-ropa7.jpg';" alt="ropa-para-perros"
+                                class="quarter__pic">
+                            <div class="quarter__brand">
+                                <h3 class="quarter__item">ZeeDog Capa</h3>
+                                <p class="quarter__code">Código:zdc</p>
+                            </div>
+                            <div class="quarter__price">
+                                <p class="quarter__amount">PRECIO $2600</p>
+                            </div>
+                        </div>
+
+                        <div class="quarter__prod" data-category="belt">
+                            <img src="media/prdts/correa/item-carrito-correa1.jpg"
+                                onmouseover="this.src='media/prdts/correa/item-carrito-correa2.jpg';"
+                                onmouseout="this.src='media/prdts/correa/item-carrito-correa1.jpg';"
+                                alt="correa-para-perros" class="quarter__pic">
+                            <div class="quarter__brand">
+                                <h3 class="quarter__item">ZeeDog Hand-Free</h3>
+                                <p class="quarter__code">Código:zdhf</p>
+                            </div>
+                            <div class="quarter__price">
+                                <p class="quarter__amount">PRECIO $1000</p>
+                            </div>
+                        </div>
+
+                        <div class="quarter__prod" data-category="belt">
+                            <img src="media/prdts/correa/item-carrito-correa3.jpg"
+                                onmouseover="this.src='media/prdts/correa/item-carrito-correa4.jpg';"
+                                onmouseout="this.src='media/prdts/correa/item-carrito-correa3.jpg';"
+                                alt="correa-para-perros" class="quarter__pic">
+                            <div class="quarter__brand">
+                                <h3 class="quarter__item">ZeeDog Full-Color</h3>
+                                <p class="quarter__code">Código:zdfc</p>
+                            </div>
+                            <div class="quarter__price">
+                                <p class="quarter__amount">PRECIO $2500</p>
+                            </div>
+                        </div>
+
+                        <div class="quarter__prod" data-category="belt">
+                            <img src="media/prdts/correa/item-carrito-correa5.jpg"
+                                onmouseover="this.src='media/prdts/correa/item-carrito-correa6.jpg';"
+                                onmouseout="this.src='media/prdts/correa/item-carrito-correa5.jpg';"
+                                alt="correa-para-perros" class="quarter__pic">
+                            <div class="quarter__brand">
+                                <h3 class="quarter__item">ZeeDog Orange-Red</h3>
+                                <p class="quarter__code">Código:zdor</p>
+                            </div>
+                            <div class="quarter__price">
+                                <p class="quarter__amount">PRECIO $2400</p>
+                            </div>
+                        </div>
+
+                        <div class="quarter__prod" data-category="belt">
+                            <img src="media/prdts/correa/item-carrito-correa7.jpg"
+                                onmouseover="this.src='media/prdts/correa/item-carrito-correa8.jpg';"
+                                onmouseout="this.src='media/prdts/correa/item-carrito-correa7.jpg';"
+                                alt="correa-para-perros" class="quarter__pic">
+                            <div class="quarter__brand">
+                                <h3 class="quarter__item">ZeeDog Scout</h3>
+                                <p class="quarter__code">Código:zds</p>
+                            </div>
+                            <div class="quarter__price">
+                                <p class="quarter__amount">PRECIO $2200</p>
+                            </div>
+                        </div>
+
+                        <div class="quarter__prod" data-category="pretals">
+                            <img src="media/prdts/pretal/item-carrito-pretal1.jpg"
+                                onmouseover="this.src='media/prdts/pretal/item-carrito-pretal2.jpg';"
+                                onmouseout="this.src='media/prdts/pretal/item-carrito-pretal1.jpg';"
+                                alt="pretal-de-perro" class="quarter__pic">
+                            <div class="quarter__brand">
+                                <h3 class="quarter__item">ZeeDog Pret-Sun</h3>
+                                <p class="quarter__code">Código:zdps</p>
+                            </div>
+                            <div class="quarter__price">
+                                <p class="quarter__amount">PRECIO $1800</p>
+                            </div>
+                        </div>
+
+                        <div class="quarter__prod" data-category="pretals">
+                            <img src="media/prdts/pretal/item-carrito-pretal3.jpg"
+                                onmouseover="this.src='media/prdts/pretal/item-carrito-pretal4.jpg';"
+                                onmouseout="this.src='media/prdts/pretal/item-carrito-pretal3.jpg';"
+                                alt="pretal-de-perro" class="quarter__pic">
+                            <div class="quarter__brand">
+                                <h3 class="quarter__item">ZeeDog Pret-Cartoon</h3>
+                                <p class="quarter__code">Código:zdpc</p>
+                            </div>
+                            <div class="quarter__price">
+                                <p class="quarter__amount">PRECIO $1800</p>
+                            </div>
+                        </div>
+
+                        <div class="quarter__prod" data-category="pretals">
+                            <img src="media/prdts/pretal/item-carrito-pretal5.jpg"
+                                onmouseover="this.src='media/prdts/pretal/item-carrito-pretal6.jpg';"
+                                onmouseout="this.src='media/prdts/pretal/item-carrito-pretal5.jpg';"
+                                alt="pretal-de-perro" class="quarter__pic">
+                            <div class="quarter__brand">
+                                <h3 class="quarter__item">ZeeDog Pret-Bicolor</h3>
+                                <p class="quarter__code">Código:zdpb</p>
+                            </div>
+                            <div class="quarter__price">
+                                <p class="quarter__amount">PRECIO $2400</p>
+                            </div>
+                        </div>
+
+                        <div class="quarter__prod" data-category="pretals">
+                            <img src="media/prdts/pretal/item-carrito-pretal7.jpg"
+                                onmouseover="this.src='media/prdts/pretal/item-carrito-pretal8.jpg';"
+                                onmouseout="this.src='media/prdts/pretal/item-carrito-pretal7.jpg';"
+                                alt="pretal-de-perro" class="quarter__pic">
+                            <div class="quarter__brand">
+                                <h3 class="quarter__item">ZeeDog Pret-Hard</h3>
+                                <p class="quarter__code">Código:zdph</p>
+                            </div>
+                            <div class="quarter__price">
+                                <p class="quarter__amount">PRECIO $2400</p>
+                            </div>
+                        </div>
+
+                        <div class="quarter__prod" data-category="toys">
+                            <img src="media/prdts/toys/item-carrito-toy1.jpg"
+                                onmouseover="this.src='media/prdts/toys/item-carrito-toy2.jpg';"
+                                onmouseout="this.src='media/prdts/toys/item-carrito-toy1.jpg';" alt="juguete-de-perro"
+                                class="quarter__pic">
+                            <div class="quarter__brand">
+                                <h3 class="quarter__item">ZeeDog Mordillo</h3>
+                                <p class="quarter__code">Código:zdm</p>
+                            </div>
+                            <div class="quarter__price">
+                                <p class="quarter__amount">PRECIO $1200</p>
+                            </div>
+                        </div>
+
+                        <div class="quarter__prod" data-category="toys">
+                            <img src="media/prdts/toys/item-carrito-toy3.jpg"
+                                onmouseover="this.src='media/prdts/toys/item-carrito-toy4.jpg';"
+                                onmouseout="this.src='media/prdts/toys/item-carrito-toy3.jpg';" alt="juguete-de-perro"
+                                class="quarter__pic">
+                            <div class="quarter__brand">
+                                <h3 class="quarter__item">ZeeDog Quebrados</h3>
+                                <p class="quarter__code">Código:zdq</p>
+                            </div>
+                            <div class="quarter__price">
+                                <p class="quarter__amount">PRECIO $2400</p>
+                            </div>
+                        </div>
+
+                        <div class="quarter__prod" data-category="toys">
+                            <img src="media/prdts/toys/item-carrito-toy5.jpg"
+                                onmouseover="this.src='media/prdts/toys/item-carrito-toy6.jpg';"
+                                onmouseout="this.src='media/prdts/toys/item-carrito-toy5.jpg';" alt="juguete-de-perro"
+                                class="quarter__pic">
+                            <div class="quarter__brand">
+                                <h3 class="quarter__item">ZeeDog Frozen</h3>
+                                <p class="quarter__code">Código:zdf</p>
+                            </div>
+                            <div class="quarter__price">
+                                <p class="quarter__amount">PRECIO $2900</p>
+                            </div>
+                        </div>
+
+                        <div class="quarter__prod" data-category="toys">
+                            <img src="media/prdts/toys/item-carrito-toy7.jpg"
+                                onmouseover="this.src='media/prdts/toys/item-carrito-toy8.jpg';"
+                                onmouseout="this.src='media/prdts/toys/item-carrito-toy7.jpg';" alt="juguete-de-perro"
+                                class="quarter__pic">
+                            <div class="quarter__brand">
+                                <h3 class="quarter__item">ZeeDog BallSnack</h3>
+                                <p class="quarter__code">Código:zdbs</p>
+                            </div>
+                            <div class="quarter__price">
+                                <p class="quarter__amount">PRECIO $1000</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-        
-                <div class="sect--producto" data-category="tazones">
-                    <img src="media/prdts/bowl/item-carrito-bowl3.jpg"
-                        onmouseover="this.src='media/prdts/bowl/item-carrito-bowl4.jpg';"
-                        onmouseout="this.src='media/prdts/bowl/item-carrito-bowl3.jpg';" alt="tazón-de-comida"
-                        class="sect--pic">
-                    <div class="sect--text">
-                        <h3>ZeeDog Bowl Standart</h3>
-                        <p>Código:zdb2</p>
-                        <p>PRECIO $600</p>
-                    </div>
-                </div>
-        
-                <div class="sect--producto" data-category="tazones">
-                    <img src="media/prdts/bowl/item-carrito-bowl5.jpg"
-                        onmouseover="this.src='media/prdts/bowl/item-carrito-bowl6.jpg';"
-                        onmouseout="this.src='media/prdts/bowl/item-carrito-bowl5.jpg';" alt="tazón-de-comida"
-                        class="sect--pic">
-                    <div class="sect--text">
-                        <h3>ZeeDog Bowl Pro</h3>
-                        <p>Código:zdb3</p>
-                        <p>PRECIO $3000</p>
-                    </div>
-                </div>
-        
-                <div class="sect--producto" data-category="tazones">
-                    <img src="media/prdts/bowl/item-carrito-bowl7.jpg"
-                        onmouseover="this.src='media/prdts/bowl/item-carrito-bowl8.jpg';"
-                        onmouseout="this.src='media/prdts/bowl/item-carrito-bowl7.jpg';" alt="tazón-de-comida"
-                        class="sect--pic">
-                    <div class="sect--text">
-                        <h3>ZeeDog Bowl Expand</h3>
-                        <p>Código:zdb4</p>
-                        <p>PRECIO $500</p>
-                    </div>
-                </div>
-        
-                <div class="sect--producto" data-category="alimentos">
-                    <img src="media/prdts/alimento/item-carrito-alimento2.png" alt="alimento-balanceado-eukanuba"
-                        class="sect--pic">
-                    <div class="sect--text">
-                        <h3>Eukanuba Small -12meses</h3>
-                        <p>Código:es12</p>
-                        <p>PRECIO $300 X/kg</p>
-                    </div>
-                </div>
-                <div class="sect--producto" data-category="alimentos">
-                    <img src="media/prdts/alimento/item-carrito-alimento1.png" alt="alimento-balanceado-eukanuba"
-                        class="sect--pic">
-                    <div class="sect--text">
-                        <h3>Eukanuba Small +1año</h3>
-                        <p>Código:es1</p>
-                        <p>PRECIO $300 X/kg</p>
-                    </div>
-                </div>
-        
-                <div class="sect--producto" data-category="alimentos">
-                    <img src="media/prdts/alimento/item-carrito-alimento3.png" alt="alimento-balanceado-eukanuba"
-                        class="sect--pic">
-                    <div class="sect--text">
-                        <h3>Eukanuba Medium -12meses</h3>
-                        <p>Código:em12</p>
-                        <p>PRECIO $350 x/kg</p>
-                    </div>
-                </div>
-        
-                <div class="sect--producto" data-category="alimentos">
-                    <img src="media/prdts/alimento/item-carrito-alimento4.png" alt="alimento-balanceado-eukanuba"
-                        class="sect--pic">
-                    <div class="sect--text">
-                        <h3>Eukanuba Medium +1año</h3>
-                        <p>Código:em1</p>
-                        <p>PRECIO $350 x/kg</p>
-                    </div>
-                </div>
-        
-                <div class="sect--producto" data-category="ropa">
-                    <img src="media/prdts/ropa/item-carrito-ropa1.jpg"
-                        onmouseover="this.src='media/prdts/ropa/item-carrito-ropa2.jpg';"
-                        onmouseout="this.src='media/prdts/ropa/item-carrito-ropa1.jpg';" class="sect--pic"
-                        alt="ropa-para-perros">
-                    <div class="sect--text">
-                        <h3>ZeeDog Buzo Pink</h3>
-                        <p>Código:zdbp</p>
-                        <p>PRECIO $800</p>
-        
-                    </div>
-                </div>
-        
-                <div class="sect--producto" data-category="ropa">
-                    <img src="media/prdts/ropa/item-carrito-ropa3.jpg"
-                        onmouseover="this.src='media/prdts/ropa/item-carrito-ropa4.jpg';"
-                        onmouseout="this.src='media/prdts/ropa/item-carrito-ropa3.jpg';" class="sect--pic"
-                        alt="ropa-para-perros">
-                    <div class="sect--text">
-                        <h3>ZeeDog Buzo Blue</h3>
-                        <p>Código:zdbb</p>
-                        <p>PRECIO $800</p>
-                    </div>
-                </div>
-        
-                <div class="sect--producto" data-category="ropa">
-                    <img src="media/prdts/ropa/item-carrito-ropa5.jpg"
-                        onmouseover="this.src='media/prdts/ropa/item-carrito-ropa6.jpg';"
-                        onmouseout="this.src='media/prdts/ropa/item-carrito-ropa5.jpg';" class="sect--pic"
-                        alt="ropa-para-perros">
-                    <div class="sect--text">
-                        <h3>ZeeDog Water-Proof</h3>
-                        <p>Código:zdi</p>
-                        <p>PRECIO $1500</p>
-                    </div>
-                </div>
-        
-                <div class="sect--producto" data-category="ropa">
-                    <img src="media/prdts/ropa/item-carrito-ropa7.jpg"
-                        onmouseover="this.src='media/prdts/ropa/item-carrito-ropa8.jpg';"
-                        onmouseout="this.src='media/prdts/ropa/item-carrito-ropa7.jpg';" alt="ropa-para-perros"
-                        class="sect--pic">
-                    <div class="sect--text">
-                        <h3>ZeeDog Capa</h3>
-                        <p>Código:zdc</p>
-                        <p>PRECIO $2600</p>
-                    </div>
-                </div>
-        
-                <div class="sect--producto" data-category="correas">
-                    <img src="media/prdts/correa/item-carrito-correa1.jpg"
-                        onmouseover="this.src='media/prdts/correa/item-carrito-correa2.jpg';"
-                        onmouseout="this.src='media/prdts/correa/item-carrito-correa1.jpg';" alt="correa-para-perros"
-                        class="sect--pic">
-                    <div class="sect--text">
-                        <h3>ZeeDog Hand-Free</h3>
-                        <p>Código:zdhf</p>
-                        <p>PRECIO $1000</p>
-                    </div>
-                </div>
-        
-                <div class="sect--producto" data-category="correas">
-                    <img src="media/prdts/correa/item-carrito-correa3.jpg"
-                        onmouseover="this.src='media/prdts/correa/item-carrito-correa4.jpg';"
-                        onmouseout="this.src='media/prdts/correa/item-carrito-correa3.jpg';" alt="correa-para-perros"
-                        class="sect--pic">
-                    <div class="sect--text">
-                        <h3>ZeeDog Full-Color</h3>
-                        <p>Código:zdfc</p>
-                        <p>PRECIO $2500</p>
-                    </div>
-                </div>
-        
-                <div class="sect--producto" data-category="correas">
-                    <img src="media/prdts/correa/item-carrito-correa5.jpg"
-                        onmouseover="this.src='media/prdts/correa/item-carrito-correa6.jpg';"
-                        onmouseout="this.src='media/prdts/correa/item-carrito-correa5.jpg';" alt="correa-para-perros"
-                        class="sect--pic">
-                    <div class="sect--text">
-                        <h3>ZeeDog Orange-Red</h3>
-                        <p>Código:zdor</p>
-                        <p>PRECIO $2400</p>
-                    </div>
-                </div>
-        
-                <div class="sect--producto" data-category="correas">
-                    <img src="media/prdts/correa/item-carrito-correa7.jpg"
-                        onmouseover="this.src='media/prdts/correa/item-carrito-correa8.jpg';"
-                        onmouseout="this.src='media/prdts/correa/item-carrito-correa7.jpg';" alt="correa-para-perros"
-                        class="sect--pic">
-                    <div class="sect--text">
-                        <h3>ZeeDog Scout</h3>
-                        <p>Código:zds</p>
-                        <p>PRECIO $2200</p>
-                    </div>
-                </div>
-        
-                <div class="sect--producto" data-category="pretales">
-                    <img src="media/prdts/pretal/item-carrito-pretal1.jpg"
-                        onmouseover="this.src='media/prdts/pretal/item-carrito-pretal2.jpg';"
-                        onmouseout="this.src='media/prdts/pretal/item-carrito-pretal1.jpg';" alt="pretal-de-perro"
-                        class="sect--pic">
-                    <div class="sect--text">
-                        <h3>ZeeDog Pret-Sun</h3>
-                        <p>Código:zdps</p>
-                        <p>PRECIO $1800</p>
-                    </div>
-                </div>
-        
-                <div class="sect--producto" data-category="pretales">
-                    <img src="media/prdts/pretal/item-carrito-pretal3.jpg"
-                        onmouseover="this.src='media/prdts/pretal/item-carrito-pretal4.jpg';"
-                        onmouseout="this.src='media/prdts/pretal/item-carrito-pretal3.jpg';" alt="pretal-de-perro"
-                        class="sect--pic">
-                    <div class="sect--text">
-                        <h3>ZeeDog Pret-Cartoon</h3>
-                        <p>Código:zdpc</p>
-                        <p>PRECIO $1800</p>
-                    </div>
-                </div>
-        
-                <div class="sect--producto" data-category="pretales">
-                    <img src="media/prdts/pretal/item-carrito-pretal5.jpg"
-                        onmouseover="this.src='media/prdts/pretal/item-carrito-pretal6.jpg';"
-                        onmouseout="this.src='media/prdts/pretal/item-carrito-pretal5.jpg';" alt="pretal-de-perro"
-                        class="sect--pic">
-                    <div class="sect--text">
-                        <h3>ZeeDog Pret-Bicolor</h3>
-                        <p>Código:zdpb</p>
-                        <p>PRECIO $2400</p>
-                    </div>
-                </div>
-        
-                <div class="sect--producto" data-category="pretales">
-                    <img src="media/prdts/pretal/item-carrito-pretal7.jpg"
-                        onmouseover="this.src='media/prdts/pretal/item-carrito-pretal8.jpg';"
-                        onmouseout="this.src='media/prdts/pretal/item-carrito-pretal7.jpg';" alt="pretal-de-perro"
-                        class="sect--pic">
-                    <div class="sect--text">
-                        <h3>ZeeDog Pret-Hard</h3>
-                        <p>Código:zdph</p>
-                        <p>PRECIO $2400</p>
-                    </div>
-                </div>
-        
-                <div class="sect--producto" data-category="juguetes">
-                    <img src="media/prdts/toys/item-carrito-toy1.jpg"
-                        onmouseover="this.src='media/prdts/toys/item-carrito-toy2.jpg';"
-                        onmouseout="this.src='media/prdts/toys/item-carrito-toy1.jpg';" alt="juguete-de-perro"
-                        class="sect--pic">
-                    <div class="sect--text">
-                        <h3>ZeeDog Mordillo</h3>
-                        <p>Código:zdm</p>
-                        <p>PRECIO $1200</p>
-                    </div>
-                </div>
-        
-                <div class="sect--producto" data-category="juguetes">
-                    <img src="media/prdts/toys/item-carrito-toy3.jpg"
-                        onmouseover="this.src='media/prdts/toys/item-carrito-toy4.jpg';"
-                        onmouseout="this.src='media/prdts/toys/item-carrito-toy3.jpg';" alt="juguete-de-perro"
-                        class="sect--pic">
-                    <div class="sect--text">
-                        <h3>ZeeDog Quebrados</h3>
-                        <p>Código:zdq</p>
-                        <p>PRECIO $2400</p>
-                    </div>
-                </div>
-        
-                <div class="sect--producto" data-category="juguetes">
-                    <img src="media/prdts/toys/item-carrito-toy5.jpg"
-                        onmouseover="this.src='media/prdts/toys/item-carrito-toy6.jpg';"
-                        onmouseout="this.src='media/prdts/toys/item-carrito-toy5.jpg';" alt="juguete-de-perro"
-                        class="sect--pic">
-                    <div class="sect--text">
-                        <h3>ZeeDog Frozen</h3>
-                        <p>Código:zdf</p>
-                        <p>PRECIO $2900</p>
-                    </div>
-                </div>
-        
-                <div class="sect--producto" data-category="juguetes">
-                    <img src="media/prdts/toys/item-carrito-toy7.jpg"
-                        onmouseover="this.src='media/prdts/toys/item-carrito-toy8.jpg';"
-                        onmouseout="this.src='media/prdts/toys/item-carrito-toy7.jpg';" alt="juguete-de-perro"
-                        class="sect--pic">
-                    <div class="sect--text">
-                        <h3>ZeeDog BallSnack</h3>
-                        <p>Código:zdbs</p>
-                        <p>PRECIO $1000</p>
-                    </div>
-                </div>
-        
             </section>
+
+    </main>
+
+    <footer>
+        <div class="sitemap">
+            <h4 class="sitemap__title">Mapa del Sitio</h4>
+            <ul class="sitemap__ul">
+                <li class="sitemap__li"><a class="sitemap__links" href="index.html">Inicio</a></li>
+                <li class="sitemap__li"><a class="sitemap__links" href="contacto-faq.html">Contacto</a></li>
+                <li class="sitemap__li"><a class="sitemap__links" href="productos.html">Productos</a></li>
+                <li class="sitemap__li"><a class="sitemap__links" href="guarderia.html">Guardería</a></li>
+                <li class="sitemap__li"> <a class="sitemap__links" href="peluqueria.html">Peluquería</a></li>
+            </ul>
         </div>
-</main>
 
-<footer>
-    <div class="sitemap">
-        <h5 class="sitemap__title">Mapa del Sitio</h5>
-        <ul class="sitemap__ul">
-            <li class="sitemap__li"><a class="sitemap__links" href="index.html">Inicio</a></li>
-            <li class="sitemap__li"><a class="sitemap__links" href="contacto-faq.html">Contacto</a></li>
-            <li class="sitemap__li"><a class="sitemap__links" href="productos.html">Productos</a></li>
-            <li class="sitemap__li"><a class="sitemap__links" href="guarderia.html">Guardería</a></li>
-            <li class="sitemap__li"> <a class="sitemap__links" href="peluqueria.html">Peluquería</a></li>
-        </ul>
-    </div>
+        <form class="newsletter" action="">
+            <label class="newsletter__label" for="email-news">
+                <h5>Newsletter</h5>
+            </label>
+            <input class="newsletter__input" type="email" id="email-news" name="email-news"
+                placeholder="email@me-susbribí.com" required>
+            <div>
+                <button class="newsletter__btn" type="submit">Suscribirme</button>
+            </div>
+        </form>
 
-    <form class="newsletter" action="">
-        <label class="newsletter__label" for="email-news"><h5>Newsletter</h5></label>
-        <input class="newsletter__input" type="email" id="email-news" name="email-news" placeholder="email@me-susbribí.com" required>
-        <div>
-            <button class="newsletter__btn" type="submit">Suscribirme</button>
+        <div class="social">
+            <ul class="social__ul">
+                <li class="social__li"><a class="social__icon" href="#" aria-describedby="boton-facebook"><i
+                            class="fa fa-facebook-square"></i></a>
+                </li>
+                <li class="social__li"><a class="social__icon" href="#" aria-describedby="boton-twitter"><i
+                            class="fa fa-twitter-square"></i></a>
+                </li>
+                <li class="social__li"><a class="social__icon" href="#" aria-describedby="boton-instagram"><i
+                            class="fa fa-instagram"></i></a></li>
+            </ul>
         </div>
-    </form>
 
-    <div class="social">
-        <ul class="social__ul">
-            <li class="social__li"><a class="social__icon" href="#" aria-describedby="boton-facebook"><i class="fa fa-facebook-square"></i></a>
-            </li>
-            <li class="social__li"><a  class="social__icon" href="#" aria-describedby="boton-twitter"><i class="fa fa-twitter-square"></i></a>
-            </li>
-            <li class="social__li"><a  class="social__icon" href="#" aria-describedby="boton-instagram"><i class="fa fa-instagram"></i></a></li>
-        </ul>
-    </div>
+        <address class="address">
+            <h5 class="address__title">Contáctate</h5>
+            <ul class="address__ul">
+                <li class="address__li">
+                    <p class="address__par">Whatsapp:</p>
+                    <h6 class="address__subtitle">011-9-51119999</h6>
+                </li>
+                <li class="address__li">
+                    <p class="address__par">Teléfono Local:</p>
+                    <h6 class="address__subtitle">011-9-4700-0001</h6>
+                </li>
+                <li class="address__li">
+                    <p class="address__par">E-mail:</p>
+                    <h6 class="address__subtitle">pawpaw@veterinaria.com</h6>
+                </li>
+            </ul>
+        </address>
 
-    <address class="address">
-        <h5 class="address__title">Contáctate</h5>
-        <ul class="address__ul">
-            <li class="address__li"><p class="address__par">Whatsapp:</p><h6 class="address__subtitle">011-9-51119999</h6>
-            </li>
-            <li class="address__li"><p class="address__par">Teléfono Local:</p><h6 class="address__subtitle">011-9-4700-0001</h6>
-            </li>
-            <li class="address__li"><p class="address__par">E-mail:</p><h6 class="address__subtitle">pawpaw@veterinaria.com</h6>
-            </li>
-        </ul>
-    </address>
-    
-    <div class="copyright">
-        <p class="copyright__text">Copyright PAWPAW S.A. - 2021. Todos los derechos reservados.</p>
-    </div>
-</footer>
+        <div class="copyright">
+            <p class="copyright__text">Copyright PAWPAW S.A. - 2021. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
-
-
-

@@ -1,0 +1,55 @@
+
+    h1,h2{
+        font-family: 'Quicksand',  sans-serif;
+        font-size:  $size-title-sml;
+        font-weight: bold;
+        @include breakpoint (tablet){
+            font-size: $size-title-mdl;
+
+        }
+        @include breakpoint (notebook){
+            font-size: $size-title-big;
+        }
+    }
+    h3,h4{
+        font-family: 'Quicksand',  sans-serif;
+        font-size:  $size-subtitle-sml;
+        font-weight: bold;
+        @include breakpoint (tablet){
+            font-size: $size-subtitle-mdl;
+        }
+        @include breakpoint (notebook){
+            font-size: $size-subtitle-big;
+        }
+
+    }
+    h5,h6{
+        font-family: 'Quicksand',  sans-serif;
+        font-size:  $size-pretitle-sml;
+        @include breakpoint (tablet){
+            font-size: $size-pretitle-mdl;
+        }
+        @include breakpoint (notebook){
+            font-size: $size-pretitle-big;
+        }
+    }
+    p{
+        font-family: 'Comfortaa',  sans-serif;
+        font-size:  $size-par-sml;
+        @include breakpoint (tablet){
+            font-size: $size-par-mdl;
+        }
+        @include breakpoint (notebook){
+            font-size: $size-par-big;
+        }
+    }
+
+    a{  
+        text-decoration: none;
+        font-family: 'Quicksand',  sans-serif;
+    }
+
+    ul,
+    ol{
+    list-style: none;
+    }

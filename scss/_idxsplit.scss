@@ -1,0 +1,78 @@
+.split {
+    margin:30px 5vw;
+    width: 90vw;
+    height: 750px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    @include breakpoint(tablet){
+        margin:30px 0vw;
+        width: 100vw;
+        flex-flow: row;
+        height: 400px;
+    
+    }
+    
+
+    &__image{
+        width: 300px;
+        height: 300px;
+        &--nerd{
+            background-image: url('../media/idx/faq.jpg');
+            box-shadow: -8px 4px 6px $clr-shad-central;
+
+   
+        }
+        &--dealer{
+            background-image: url('../media/idx/contacto.jpg');
+            box-shadow: -8px 4px 6px $clr-shad-central;
+            @include breakpoint(tablet){
+            box-shadow: -2px 4px 6px $clr-shad-central;
+            }
+        }
+        &--nerd,
+        &--dealer{
+            background-attachment:local;
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:contain;
+            border: solid rgb(255, 255, 255) 15px;
+        }
+        @include breakpoint(tablet){
+            width: 234px;
+            height: 234px;
+            }
+            @include breakpoint(notebook){
+                width: 312px;
+                height: 312px;
+            }
+        }
+    &__text{
+        width: 300px;
+        height: 30vh;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+        background: $clr-bkg-sixth;
+    
+    @include breakpoint(tablet){
+        height: 234px;
+
+    }
+    @include breakpoint(notebook){
+        width: 400px;
+        height: 300px;
+    }
+    }
+        
+    &__title{
+        text-align: center;
+        @include title ($clr-text, $clr-shad-central)
+    }
+    &__par{
+        text-align: center;
+        @include lead ($clr-text, normal, $clr-shad-central)
+    }
+}

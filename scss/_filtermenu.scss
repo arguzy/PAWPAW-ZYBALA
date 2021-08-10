@@ -1,0 +1,112 @@
+.quarter{
+    &__board{
+        position:fixed;
+        width: 75px;
+        height: 75px;
+        bottom: 15px;
+        left: 30px;
+        background: $clr-iconic-opposite;
+        border-radius: 50% 50% 50% 5%;
+        border: solid 5px $clr-brdrs;
+        font-family: 'Quicksand', sans-serif;
+        color: $clr-text;
+        font-size: 1em;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    &__expanded{
+
+        z-index: -1;
+        position:fixed;
+        width: 75px;
+        height: 75px;
+        bottom: 15px;
+        left: 30px;
+        background: $clr-iconic-opposite;
+        border-radius: 50% 50% 50% 5%;
+        border: solid 5px $clr-brdrs;
+        transition: 1s linear;
+    }
+    &__input{
+        display: none;
+        &:checked ~ .quarter__inventory{
+            visibility: visible;
+            opacity: 1;
+            z-index: 8;
+            transition: 4s ease-in-out;
+    }
+        &:checked ~ .quarter__expanded{
+            border-radius: 10% 10% 5% 5%;
+            width: 175px;
+            height: 375px;
+
+    }
+    }
+    
+        &__knob{
+        font-family: 'Quicksand', sans-serif;
+        color: $clr-text;
+        font-size: 1em;
+    }
+    
+
+    &__inventory{
+        display: flex;
+        flex-flow: column-reverse;
+        list-style: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+    &__segment{
+        position: absolute;
+        font-family: 'Quicksand', sans-serif;
+        color: $clr-text;
+        font-size: .8em;
+        font-weight: bolder;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        z-index: 8;
+
+        &--all{
+            left: 100px;
+            right: 0;
+            bottom: 325px;
+        }
+        &--pots{
+            left: 100px;
+            right: 0;
+            bottom: 275px;
+        }
+        &--food{
+            left: 100px;
+            right: 0;
+            bottom: 225px;
+        }
+        &--clothe{
+            left: 100px;
+            right: 0;
+            bottom: 175px;
+        }
+        &--belt{
+            left: 100px;
+            right: 0;
+            bottom: 125px;
+        }
+        &--pretals{
+            left: 100px;
+            right: 0;
+            bottom: 75px;
+        }
+        &--toys{
+            left: 100px;
+            right: 0;
+            bottom: 25px;
+        }
+    }
+}

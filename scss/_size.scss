@@ -1,4 +1,9 @@
 
+//tamaños//
+
+$size-header-font: 1.5em;
+
+
 $size-title-sml: 1.6em;
 $size-title-mdl: 2.1em;
 $size-title-big: 3.3em;
@@ -34,4 +39,8 @@ $size-btn-mrg: .6em;
 $size-btn-padding: .5em .8em;
 $size-btn-bdr: .5em .8em;
 
-$size-header-font: 1.5em;
+//calculos//
+main{
+    min-height: calc(100vh -52px -442px);
+}
+

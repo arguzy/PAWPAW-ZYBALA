@@ -1,50 +1,68 @@
 .hero{
-    min-height: 90vh;
+    min-height: 85vh;
     min-width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content:center;
-       
+    justify-content:center; 
+    align-items: center;
+    @include breakpoint (tablet){
+    align-items: flex-start;
+    }
     &--index {
-        background: url('../media/idx/wall-idx.jpg');
-    }
-    &--contacto{
+    background-image: url('../media/idx/wall-idx.jpg');
+}
+    &--contact{
     background-image: url('../media/cont/wall-hero-cnt.png');
-    }   
-    &--pelu {
-    background-image: url('../media/pelu/wall-hero-barber.jpg');
-    }
+}
+    &--barber {
+    background-image: url('../media/barber/wall-hero-barber.jpg');
+}
     &--kinder{
     background-image: url('../media/kinder/wall-hero-kinder.jpg');
-    }
-    &--productos {
+}
+    &--products {
     background-image: url('../media/prdts/wall-hero-shop.jpg');
-    }
+}
     &--index,  
-    &--contacto,
-    &--pelu,
-    &--productos {
+    &--contact,
+    &--kinder,
+    &--barber,
+    &--products{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    }
+    }            
  &__container{
     margin-left: .5em;
-    display: block;
     width: 60vw;
     max-width: 320px;
+    min-height: 40vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    @include breakpoint (tablet){
+        padding-left: 2em;
+        align-items: flex-start;
     }
+}
+&__title{
+    padding-bottom: .8em;
+    padding-left: .3em;
+    text-align: center;
+    @include title ($clr-text, $clr-shad)
+}
+&__text{
+    padding-bottom: .8em;
+    padding-left: .5em;
+    text-align: center;
+    @include lead ($clr-text, normal, $clr-shad);
+}
 &__title,
 &__text{
-    font-size: 1em + 1.5vw;
-    color: whitesmoke;
-    text-shadow:indigo $size-font-shadow;   
-    }
-&__title{
-font-size: $size-font-titles;
-    }
-&__text{
-font-size: $size-font-subtitles;
-    }
+    @include breakpoint (tablet){
+        text-align:left;
+}
+}
 }
