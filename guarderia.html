@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="Guardería Canina, deja a tu perro al cuidado de profesionales las 24hs. Días y horarios flexibles, periodos largos y cortos, con y sin reserva. Precios accesibles.">
-        <meta name="keywords" content="guarderia canina, guarderia perro, guarderia perro buenos aires, guarderia perro capital federal, guarderia perro palermo, cuidado perro, perro vacaciones, adiestrado perro, educacion perro, sociabilizar perro">
-        <meta name="author" content="Ariel Zybala">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/styles.css">
-        <title>PAWPAW Guardería Canina</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Guardería Canina, deja a tu perro al cuidado de profesionales las 24hs. Días y horarios flexibles, periodos largos y cortos, con y sin reserva. Precios accesibles.">
+    <meta name="keywords"
+        content="guarderia canina, guarderia perro, guarderia perro buenos aires, guarderia perro capital federal, guarderia perro palermo, cuidado perro, perro vacaciones, adiestrado perro, educacion perro, sociabilizar perro">
+    <meta name="author" content="Ariel Zybala">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>PAWPAW Guardería Canina</title>
+</head>
+
 <body>
-    <header>  
+    <!--HEADER-->
+    <header>
         <a class="logo" href="index.html">PAW-PAW <i class="fa fa-paw logo__i"></i></a>
         <div class="menu">
-            <input id="nav" class="menu__input" type="checkbox" >
+            <input id="nav" class="menu__input" type="checkbox">
             <label for="nav" class="menu__label"><i class="fa fa-bars menu__icon"></i></label>
             <nav class="menu__nav">
-                    <ul class="menu__ul">
-                        <li class="menu__li"><a class="menu__a" href="index.html">Inicio</a></li>
-                        <li class="menu__li"><a  class="menu__a" href="contacto-faq.html">Contacto</a></li>
-                        <li class="menu__li"><a  class="menu__a" href="productos.html">Productos</a></li>
-                        <li class="menu__li"><a  class="menu__a" href="guarderia.html">Guardería</a></li>
-                        <li class="menu__li"><a  class="menu__a" href="peluqueria.html">Peluquería</a></li>
-                    </ul>
+                <ul class="menu__ul">
+                    <li class="menu__li"><a class="menu__a" href="index.html">Inicio</a></li>
+                    <li class="menu__li"><a class="menu__a" href="contacto-faq.html">Contacto</a></li>
+                    <li class="menu__li"><a class="menu__a" href="productos.html">Productos</a></li>
+                    <li class="menu__li"><a class="menu__a" href="guarderia.html">Guardería</a></li>
+                    <li class="menu__li"><a class="menu__a" href="peluqueria.html">Peluquería</a></li>
+                </ul>
             </nav>
         </div>
     </header>
-
-
-
+    <!--HERO /
+    SECONDARY Bloques: Order, Staff y Map -se aplicó un mixin y extend se redujo mucho la cantidad de escritura a mano
+    / THIRD Slider y Formulario-->
     <main>
+  <!---->      
         <section class="hero hero--kinder">
             <div class="hero__container">
                 <h1 class="hero__title">PAWPAW Guardería para Perros</h1>
@@ -38,9 +44,8 @@
                 <a class="btn" href="#turn-kinder">Pedír Turno!</a>
             </div>
         </section>
-    
+
         <section class="secondary">
-    
             <div class="secondary__container secondary__container--order">
                 <div class="secondary__charge">
                     <div class="secondary__framing">
@@ -55,22 +60,24 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="secondary__container secondary__container--keeper">
                 <div class="secondary__staff secondary__staff--groomer">
                     <div class="secondary__framing">
                         <h3 class="secondary__title">¿Quién cuida los perros?</h3>
-                        <p class="secondary__text">Tranquilo, nuestros empleados son adiestradores profesionales, de FVET
+                        <p class="secondary__text">Tranquilo, nuestros empleados son adiestradores profesionales, de
+                            FVET
                             UBA.</p>
                     </div>
                 </div>
             </div>
-    
+
             <div class="secondary__container secondary__container--map">
                 <div class="secondary__ubication">
                     <div class="secondary__framing">
                         <h2 class="secondary__title">¿Dónde se encuentra nuestra Guardería?</h2>
-                        <p class="secondary__text">La podes encontrar en la calle José Cabrera 6057, del barrio de Palermo,
+                        <p class="secondary__text">La podes encontrar en la calle José Cabrera 6057, del barrio de
+                            Palermo,
                             en la Ciudad Autónoma de Buenos Aires.</p>
                     </div>
                 </div>
@@ -82,10 +89,10 @@
             </div>
         </section>
 
-    <section class="third" id="turn-kinder">
-        <div class="third__slider">
-            <div class="third__framing">
-                <div class="third__message">
+        <section class="third" id="turn-kinder">
+            <div class="third__slider">
+                <div class="third__framing">
+                    <div class="third__message">
                         <h3 class="third__title">Adiestradores comprometidos e instalaciones únicas!</h3>
                         <p class="third__par">El mejor lugar ya esta preparado, para cuando quieras!</p>
                     </div>
@@ -94,37 +101,37 @@
                             <img class="third__img" src="media/kinder/slidekinder/slider-pic1-kinder.jpg"
                                 alt="perros-en-guarderia">
                         </div>
-    
+
                         <div>
                             <img class="third__img" src="media/kinder/slidekinder/slider-pic2-kinder.jpg"
                                 alt="perros-en-guarderia">
                         </div>
-    
+
                         <div>
                             <img class="third__img" src="media/kinder/slidekinder/slider-pic3-kinder.jpg"
                                 alt="perros-en-guarderia">
                         </div>
-    
+
                         <div>
                             <img class="third__img" src="media/kinder/slidekinder/slider-pic4-kinder.jpg"
                                 alt="perros-en-guarderia">
                         </div>
-    
+
                         <div>
                             <img class="third__img" src="media/kinder/slidekinder/slider-pic5-kinder.jpg"
                                 alt="perros-en-guarderia">
                         </div>
-    
+
                         <div>
                             <img class="third__img" src="media/kinder/slidekinder/slider-pic6-kinder.jpg"
                                 alt="perros-en-guarderia">
                         </div>
-    
+
                         <div>
                             <img class="third__img" src="media/kinder/slidekinder/slider-pic7-kinder.jpg"
                                 alt="perros-en-guarderia">
                         </div>
-    
+
                         <div>
                             <img class="third__img" src="media/kinder/slidekinder/slider-pic8-kinder.jpg"
                                 alt="perros-en-guarderia">
@@ -142,9 +149,10 @@
                                 <p class="third__par">Nombre/s y Apellido/s</p>
                             </label>
                             <input class="third__input" type="text" id="fullname-kinder" name="fullname-kinder"
-                                pattern="[A-Za-z]{03-15}" autocomplete="on" required placeholder="Nombre/s y Apellido/s">
+                                pattern="[A-Za-z]{03-15}" autocomplete="on" required
+                                placeholder="Nombre/s y Apellido/s">
                         </div>
-        
+
                         <div class="third__phone">
                             <label class="third__label" for="phone-kinder" hidden>
                                 <p class="third__par">Nro. de Teléfono</p>
@@ -153,7 +161,7 @@
                                 pattern="[0-9]{1}-[0-9]{4}-[0-9]{8}" autocomplete="on" required
                                 placeholder="Nro. de Teléfono">
                         </div>
-        
+
                         <div class="third__mail">
                             <label class="third__label" for="email-kinder" hidden>
                                 <p class="third__par">Casilla de Correo</p>
@@ -161,7 +169,7 @@
                             <input class="third__input" type="email" id="email-kinder" name="email-kinder"
                                 placeholder="casilla@correo.com" autocomplete="off" required>
                         </div>
-        
+
                         <div class="third__pet">
                             <label class="third__label" for="name-pet-kinder" hidden>
                                 <p class="third__par">Nombre del Perro</p>
@@ -173,40 +181,40 @@
                     <div class="third__additional">
                         <hr>
                         <p class="third__subtitle">Servicios Adicionales Servicio</p>
-        
-                        <label class="third__label" for="trainer"><input class="third__input" type="checkbox" id="trainer"
-                                name="trainer" value="trainer">
+
+                        <label class="third__label" for="trainer"><input class="third__input" type="checkbox"
+                                id="trainer" name="trainer" value="trainer">
                             <p class="third__par">Adiestramiento Conductual</p>
                         </label>
-        
-                        <label class="third__label" for=""><input class="third__input" type="checkbox" id="socialization"
-                                name="socialization" value="socialization">
+
+                        <label class="third__label" for=""><input class="third__input" type="checkbox"
+                                id="socialization" name="socialization" value="socialization">
                             <p class="third__par">Mejorar Sociabilidad</p>
                         </label>
                         <label class="third__label" for="bath"><input class="third__input" type="checkbox" id="bath"
-                            name="bath" value="bath">
-                        <p class="third__par">Baño</p>
-                    </label>
-        
-                    <label class="third__label" for="cut-hair"> <input class="third__input" type="checkbox"
-                            id="cut-hair" name="cut-hair" value="cut-hair">
-                        <p class="third__par">Corte de Pelo</p>
-                    </label>
-        
-                    <label class="third__label" for="cut-nails"><input class="third__input" type="checkbox"
-                            id="cut-nails" name="cut-nails" value="cut-nails">
-                        <p class="third__par">Corte de Uñas</p>
-                    </label>
-        
-                    <label class="third__label" for="clean-ear"> <input class="third__input" type="checkbox"
-                            id="clean-ear" name="clean-ear" value="clean-ear">
-                        <p class="third__par">Limpieza de Oídos</p>
-                    </label>
-        
-                    <label class="third__label" for="clean-gland"><input class="third__input" type="checkbox"
-                            id="clean-gland" name="clean-gland" value="clean-gland">
-                        <p class="third__par">Limpieza de Glándulas</p>
-                    </label>
+                                name="bath" value="bath">
+                            <p class="third__par">Baño</p>
+                        </label>
+
+                        <label class="third__label" for="cut-hair"> <input class="third__input" type="checkbox"
+                                id="cut-hair" name="cut-hair" value="cut-hair">
+                            <p class="third__par">Corte de Pelo</p>
+                        </label>
+
+                        <label class="third__label" for="cut-nails"><input class="third__input" type="checkbox"
+                                id="cut-nails" name="cut-nails" value="cut-nails">
+                            <p class="third__par">Corte de Uñas</p>
+                        </label>
+
+                        <label class="third__label" for="clean-ear"> <input class="third__input" type="checkbox"
+                                id="clean-ear" name="clean-ear" value="clean-ear">
+                            <p class="third__par">Limpieza de Oídos</p>
+                        </label>
+
+                        <label class="third__label" for="clean-gland"><input class="third__input" type="checkbox"
+                                id="clean-gland" name="clean-gland" value="clean-gland">
+                            <p class="third__par">Limpieza de Glándulas</p>
+                        </label>
                     </div>
                     <div class="third__admission">
                         <hr class="third__scratch">
@@ -215,23 +223,22 @@
                     </div>
                     <div class="third__commentary">
                         <hr class="third__scratch">
-                        <label class="third__label" for="commentary-kinder" hidden>Si tienes un comentario importante sobre
+                        <label class="third__label" for="commentary-kinder" hidden>Si tienes un comentario importante
+                            sobre
                             tú mascota, dejalo aquí.</label>
                         <textarea class="third__textarea " id="commentary-kinder" name="commentary" cols="25" rows="3"
                             style="resize:none"
                             placeholder="Si tienes un comentario importante sobre tú mascota, dejalo aquí."
                             required></textarea>
-                        </div>
-                    </form>
-                    <button class="btn btn--form" type="submit">Enviar</button>
-                </div>
-                
-        </section>
-    
-    
-    </main>
-    
+                    </div>
+                </form>
+                <button class="btn btn--form" type="submit">Enviar</button>
+            </div>
 
+        </section>
+
+    </main>
+    <!--FOOTER-->
     <footer>
         <div class="sitemap">
             <h4 class="sitemap__title">Mapa del Sitio</h4>
@@ -245,8 +252,11 @@
         </div>
 
         <form class="newsletter" action="">
-            <label class="newsletter__label" for="email-news"><h5>Newsletter</h5></label>
-            <input class="newsletter__input" type="email" id="email-news" name="email-news" placeholder="email@me-susbribí.com" required>
+            <label class="newsletter__label" for="email-news">
+                <h5>Newsletter</h5>
+            </label>
+            <input class="newsletter__input" type="email" id="email-news" name="email-news"
+                placeholder="email@me-susbribí.com" required>
             <div>
                 <button class="newsletter__btn" type="submit">Suscribirme</button>
             </div>
@@ -254,26 +264,35 @@
 
         <div class="social">
             <ul class="social__ul">
-                <li class="social__li"><a class="social__icon" href="#" aria-describedby="boton-facebook"><i class="fa fa-facebook-square"></i></a>
+                <li class="social__li"><a class="social__icon" href="#" aria-describedby="boton-facebook"><i
+                            class="fa fa-facebook-square"></i></a>
                 </li>
-                <li class="social__li"><a  class="social__icon" href="#" aria-describedby="boton-twitter"><i class="fa fa-twitter-square"></i></a>
+                <li class="social__li"><a class="social__icon" href="#" aria-describedby="boton-twitter"><i
+                            class="fa fa-twitter-square"></i></a>
                 </li>
-                <li class="social__li"><a  class="social__icon" href="#" aria-describedby="boton-instagram"><i class="fa fa-instagram"></i></a></li>
+                <li class="social__li"><a class="social__icon" href="#" aria-describedby="boton-instagram"><i
+                            class="fa fa-instagram"></i></a></li>
             </ul>
         </div>
 
         <address class="address">
             <h5 class="address__title">Contáctate</h5>
             <ul class="address__ul">
-                <li class="address__li"><p class="address__par">Whatsapp:</p><h6 class="address__subtitle">011-9-51119999</h6>
+                <li class="address__li">
+                    <p class="address__par">Whatsapp:</p>
+                    <h6 class="address__subtitle">011-9-51119999</h6>
                 </li>
-                <li class="address__li"><p class="address__par">Teléfono Local:</p><h6 class="address__subtitle">011-9-4700-0001</h6>
+                <li class="address__li">
+                    <p class="address__par">Teléfono Local:</p>
+                    <h6 class="address__subtitle">011-9-4700-0001</h6>
                 </li>
-                <li class="address__li"><p class="address__par">E-mail:</p><h6 class="address__subtitle">pawpaw@veterinaria.com</h6>
+                <li class="address__li">
+                    <p class="address__par">E-mail:</p>
+                    <h6 class="address__subtitle">pawpaw@veterinaria.com</h6>
                 </li>
             </ul>
         </address>
-        
+
         <div class="copyright">
             <p class="copyright__text">Copyright PAWPAW S.A. - 2021. Todos los derechos reservados.</p>
         </div>

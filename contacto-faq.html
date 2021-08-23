@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +14,7 @@
 </head>
 
 <body>
+    <!--HEADER-->
     <header>
         <a class="logo" href="index.html">PAW-PAW <i class="fa fa-paw logo__i"></i></a>
         <div class="menu">
@@ -31,13 +31,17 @@
             </nav>
         </div>
     </header>
+    <!--HERO / Third: 
+        / Contacto (dirección-map y Form) 
+        / FAQ (DropDown con checkboxs: se selecciona esta estructura, porque se podían reglar algunas cosas esteticas que me parecián faciles y que demostraban más conocimiento que en vez de usar un etiquetado con Details y Summary (que es infinitamente más simple, pero que no me gusta)-->
     <main>
+
         <section class="hero hero--contact">
             <div class="hero__container">
                 <h1 class="hero__title">Somos PAWPAW!</h1>
                 <p class="hero__text">Una veterinaria y mucho más, pensada para dar el mejor servicio a los dueños y sus mascotas</p>
                 <a href="#get-in-touch" class="btn">Escribinos!</a>
-                <a href="#responding" class="btn btn--minor">FAQ's</a>
+                <a href="#responding" class="btn btn--minor btn--resp">FAQ's</a>
             </div>
         </section>
 
@@ -46,8 +50,7 @@
                 <div class="third__container third__container--map">
                     <div class="third__ubication">
                         <h2 class="third__title">¿Dónde se encuentra PawPaw?</h2>
-                        <p class="third__text">El local central de PawPaw, donde encontrarás nuestro market, en
-                            la calle Av. Monroe 4500, en Villa Urquiza, en la Ciudad Autónoma de Buenos Aires. </p>
+                        <p class="third__text">El local central de PawPaw, se encuentra en la calle Av. Monroe 4500, en Villa Urquiza, en la Ciudad Autónoma de Buenos Aires. </p>
                     </div>
                     <iframe class="third__gps"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.32429037823!2d-58.482000185036625!3d-34.57066016325625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb663fc1ad7d9%3A0x94b6352088a79cc5!2sAv.%20Monroe%204500%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1624048071823!5m2!1ses-419!2sa "
@@ -121,8 +124,8 @@
             <section class="faq" id="responding">
                 <div class="faq__framing"></div>
                 <div class="faq__cover">
-                    <h4 class="faq__caption">Respuestas a las Preguntas Frecuentes</h4>
-                    <p class="faq__tale">Encuentra aquí todas las respuestas que necesitas. Si tu pregunta no se
+                    <h4 class="faq__title">Respuestas a las Preguntas Frecuentes</h4>
+                    <p class="faq__text">Encuentra aquí todas las respuestas que necesitas. Si tu pregunta no se
                         resuelve, puedes enviarnos un mensaje</p>
                 </div>
 
@@ -332,7 +335,7 @@
         </section>
 
     </main>
-
+    <!--FOOTER-->
     <footer>
         <div class="sitemap">
             <h4 class="sitemap__title">Mapa del Sitio</h4>
