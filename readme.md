@@ -10,7 +10,7 @@ ___
 
 El sitio web se fue desarrollando progresivamente como respuesta al grupo de consignas impuestas en los desafíos del curso de *"Desarrollo Web"* impartido por el docente **Maximiliano Torreblanca** en la casa de estudio **CODERHOUSE**, con la ayuda de la docente tutora **María L. G. Jausoro**.
 
-## Retos, Perduralibilidad y Superación en el Proceso
+## Retos, Cambios, Necesidades y Superación en el Proceso
 
 El proyecto inicialmente se compuso con la teoría de crear 7 páginas, donde alojar la mayor cantidad de temáticas abordadas en el curso.
 Poco a poco, con la necesidad de aprobar los desafíos, el proyecto se redujo, fue descartada el contenido entero de una página puesto que no incorporabla nada sustancialmente distinto en pos de demostrar un conocimiento diferente al que se estaba usando en otras páginas. Luego, se produjo una unificación con la página de contacto y de preguntas frecuentes, puesto que por separadas eran páginas con poco desarrollo en instrumentación de conocimientos, pero no lo suficiente para ser descartadas.
